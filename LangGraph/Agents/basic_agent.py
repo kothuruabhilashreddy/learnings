@@ -23,8 +23,11 @@ graph.add_edge(START, "process_node")
 graph.add_edge("process_node", END)
 agent = graph.compile()
 
+
 input_message = input("Enter your message: ")
-reply = agent.invoke({"message": [HumanMessage(content= input_message)]})
-print("Final reply:", reply['message'][-1].content)
+while(input_message.lower() != "exit"):
+    reply = agent.invoke({"message": [HumanMessage(content= input_message)]})
+    print("AI:", reply['message'][-1].content)
+    input_message = input("Enter your message: ")
 
 

@@ -79,5 +79,5 @@ def print_stream(stream):
         else:
             message.pretty_print()
 
-input_message = {"messages": [("user", "Calculate 14 + 23 * 12 - 5")]}
+input_message = {"messages": [("user", "Calculate 14 + 23 * 12 and tell me the top trending news in usa")]}
 print_stream(app.stream(input=input_message, stream_mode="values"))

@@ -1,0 +1,48 @@
+[
+  {
+    "employee_id": "EMP0001",
+    "full_name": "nitish kumar",
+    "email": "nitish.kumar@company.com",
+    "phone": "+1-9876543210",
+    "age": 28,
+    "department": "Engineering",
+    "joining_date": "2022-06-15",
+    "salary": 75000.00,
+    "emergency_contact": null,
+    "skills": ["Python", "SQL", "Docker"],
+    "address": {
+      "street": "42 MG Road",
+      "city": "Albany",
+      "state": "New York",
+      "pincode": "12085"
+    },
+    "bank_details": {
+      "account_number": "1234567890",
+      "ifsc_code": "CHAS0001234",
+      "bank_name": "CHASE Bank"
+    }
+  },
+  {
+    "employee_id": "EMP0042",
+    "full_name": "priya sharma",
+    "email": "priya.sharma@company.com",
+    "phone": "9123456780",
+    "age": 53,
+    "department": "HR",
+    "joining_date": "2015-03-01",
+    "salary": 120000.50,
+    "emergency_contact": "9999988888",
+    "skills": ["Recruitment", "Payroll", "Compliance"],
+    "address": {
+      "street": "6 Middle Lane",
+      "city": "Chlesea",
+      "state": "MAssachusetts",
+      "pincode": "02120"
+    },
+    "bank_details": {
+      "account_number": "9876543210",
+      "ifsc_code": "ICIC0002345",
+      "bank_name": "ICICI Bank"
+    }
+  }
+]

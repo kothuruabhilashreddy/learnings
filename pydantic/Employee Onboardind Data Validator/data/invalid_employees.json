@@ -1,0 +1,122 @@
+[
+  {
+    "_comment": "Bad employee_id pattern",
+    "employee_id": "E001",
+    "full_name": "ravi verma",
+    "email": "ravi.verma@company.com",
+    "phone": "9876543210",
+    "age": 30,
+    "department": "Finance",
+    "joining_date": "2021-01-10",
+    "salary": 60000.00,
+    "emergency_contact": null,
+    "skills": ["Excel", "Tally"],
+    "address": {
+      "street": "St park street",
+      "city": "San Jose",
+      "state": "California",
+      "pincode": "95112"
+    },
+    "bank_details": {
+      "account_number": "1122334455",
+      "ifsc_code": "SBIN0001234",
+      "bank_name": "SBI"
+    }
+  },
+  {
+    "_comment": "Age 55 with no emergency contact — model_validator should catch this",
+    "employee_id": "EMP0023",
+    "full_name": "suresh mehta",
+    "email": "suresh.mehta@company.com",
+    "phone": "9012345678",
+    "age": 55,
+    "department": "Operations",
+    "joining_date": "2005-07-20",
+    "salary": 95000.00,
+    "emergency_contact": null,
+    "skills": ["Logistics", "SAP"],
+    "address": {
+      "street": "88 Civil Lines",
+      "city": "San Francisco",
+      "state": "California",
+      "pincode": "94102"
+    },
+    "bank_details": {
+      "account_number": "5566778899",
+      "ifsc_code": "AXIS0004567",
+      "bank_name": "Axis Bank"
+    }
+  },
+  {
+    "_comment": "Salary passed as a string, IFSC code is wrong format",
+    "employee_id": "EMP0067",
+    "full_name": "anjali singh",
+    "email": "anjali.singh@company.com",
+    "phone": "8899001122",
+    "age": 26,
+    "department": "Marketing",
+    "joining_date": "2023-09-01",
+    "salary": "eighty thousand",
+    "emergency_contact": null,
+    "skills": ["SEO", "Content"],
+    "address": {
+      "street": "5 Linking Road",
+      "city": "Phoenix",
+      "state": "Arizona",
+      "pincode": "85001"
+    },
+    "bank_details": {
+      "account_number": "6677889900",
+      "ifsc_code": "HDFC-001",
+      "bank_name": "HDFC Bank"
+    }
+  },
+  {
+    "_comment": "Phone number is only 8 digits, email is invalid",
+    "employee_id": "EMP0089",
+    "full_name": "karan bajaj",
+    "email": "karan.bajaj-at-company.com",
+    "phone": "98765432",
+    "age": 34,
+    "department": "Engineering",
+    "joining_date": "2019-11-15",
+    "salary": 85000.00,
+    "emergency_contact": null,
+    "skills": ["Java", "Kubernetes"],
+    "address": {
+      "street": "23 avenue road",
+      "city": "Kansas City",
+      "state": "Missouri",
+      "pincode": "64101"
+    },
+    "bank_details": {
+      "account_number": "3344556677",
+      "ifsc_code": "KOTAK0001111",
+      "bank_name": "Kotak Bank"
+    }
+  },
+  {
+    "_comment": "Age is out of bounds (130), pincode has letters in it",
+    "employee_id": "EMP0101",
+    "full_name": "meena iyer",
+    "email": "meena.iyer@company.com",
+    "phone": "7788990011",
+    "age": 130,
+    "department": "Legal",
+    "joining_date": "2010-04-05",
+    "salary": 110000.00,
+    "emergency_contact": "9876501234",
+    "skills": ["Contract Law", "Compliance"],
+    "address": {
+      "street": "9 Anna Avenue",
+      "city": "Houston",
+      "state": "Texas",
+      "pincode": "77A01"
+    },
+    "bank_details": {
+      "account_number": "7788990011",
+      "ifsc_code": "HDFC0009876",
+      "bank_name": "HDFC Bank"
+    }
+  }
+]
